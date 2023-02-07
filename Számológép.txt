@@ -1,0 +1,225 @@
+def main():
+    ans = 0
+    print("Projekt: Számológép, \nFejlesztők: Kapás Gergő és Kalmár Zsolt\nA projektet bemutatja: Őszi Norbert\n A projektet vezette: Palló Barnabás")
+    while(True):
+        a = int(input("Összeadás(1), Kivonás(2), Szorzás(3), Osztás(4), Kilépés(0)"))
+
+        #Kilépés
+
+        if a == 0:
+            print("Kilépés...")
+            break
+
+        #Összeadás
+
+        if a == 1:
+            print("Az összeadást választotta!")
+            b1 = int(input("Adjon meg egy számot"))
+            b2 = int(input("Adjon meg még egy számot"))
+            ans+=b1
+            ans+=b2
+            print("Az eredmény:",ans)
+            while(True):
+                b = int(input("Szeretne tovább számolni a számmal(1) vagy nem(0)"))
+                if b == 0:
+                    print("Kilépés...")
+                    exit()
+                elif b == 1:
+                    a1 = int(input("Milyen műveletet szeretne elvégezni a kapott számmal? Összeadás(1), Kivonás(2), Szorzás(3), Osztás(4), Kilépés(0)"))
+                    if a1 == 0:
+                        print("Kilépés...")
+                        exit()
+                    elif a1 == 1:
+                        print("Az összeadást válaszotta")
+                        print("Az előző szám:", ans)
+                        c1 = int(input("Adjon meg egy számot:"))
+                        ans+=c1
+                        print("Az új eredménye:", ans)
+                        continue
+                    elif a1 == 2:
+                        print("A kivonást válaszotta")
+                        print("Az előző szám:", ans)
+                        c2 = int(input("Adjon meg egy számot:"))
+                        ans-=c2
+                        print("Az új eredménye:", ans)
+                        continue
+                    elif a1 == 3:
+                        print("A szorzást válaszotta")
+                        print("Az előző szám:", ans)
+                        c3 = int(input("Adjon meg egy számot:"))
+                        ans*=c3
+                        print("Az új eredménye:", ans)
+                        continue
+                    elif a1 == 4:
+                        print("Az osztást válaszotta")
+                        print("Az előző szám:", ans)
+                        c4 = int(input("Adjon meg egy számot:"))
+                        ans/=c4
+                        print("Az új eredménye:", ans)
+                        continue
+                    else:
+                        print("Hibás adat!")
+                        continue
+                else:
+                    print("Hibás adat!")
+                    continue
+
+        #Kivonás
+
+        if a == 2:
+            print("A kivonást választotta!")
+            b1 = int(input("Adjon meg egy számot"))
+            b2 = int(input("Adjon meg még egy számot"))
+            ans+=b1
+            ans-=b2
+            print("Az eredmény:",ans)
+            while(True):
+                b = int(input("Szeretne tovább számolni a számmal(1) vagy nem(0)"))
+                if b == 0:
+                    print("Kilépés...")
+                    exit()
+                elif b == 1:
+                    a1 = int(input("Milyen műveletet szeretne elvégezni a kapott számmal? Összeadás(1), Kivonás(2), Szorzás(3), Osztás(4), Kilépés(0)"))
+                    if a1 == 0:
+                        print("Kilépés...")
+                        exit()
+                    elif a1 == 1:
+                        print("Az összeadást válaszotta")
+                        print("Az előző szám:", ans)
+                        c1 = int(input("Adjon meg egy számot:"))
+                        ans+=c1
+                        print("Az új eredménye:", ans)
+                        continue
+                    elif a1 == 2:
+                        print("A kivonást válaszotta")
+                        print("Az előző szám:", ans)
+                        c2 = int(input("Adjon meg egy számot:"))
+                        ans-=c2
+                        print("Az új eredménye:", ans)
+                        continue
+                    elif a1 == 3:
+                        print("A szorzást válaszotta")
+                        print("Az előző szám:", ans)
+                        c3 = int(input("Adjon meg egy számot:"))
+                        ans*=c3
+                        print("Az új eredménye:", ans)
+                        continue
+                    elif a1 == 4:
+                        print("Az osztást válaszotta")
+                        print("Az előző szám:", ans)
+                        c4 = int(input("Adjon meg egy számot:"))
+                        ans/=c4
+                        print("Az új eredménye:", ans)
+                        continue
+                    else:
+                        print("Hibás adat!")
+                        continue
+
+        #Szorzás
+
+        if a == 3:
+            print("A szorzást választotta!")
+            b1 = int(input("Adjon meg egy számot"))
+            b2 = int(input("Adjon meg még egy számot"))
+            ans+=b1
+            ans*=b2
+            print("Az eredmény:",ans)
+            while(True):
+                b = int(input("Szeretne tovább számolni a számmal(1) vagy nem(0)"))
+                if b == 0:
+                    print("Kilépés...")
+                    exit()
+                elif b == 1:
+                    a1 = int(input("Milyen műveletet szeretne elvégezni a kapott számmal? Összeadás(1), Kivonás(2), Szorzás(3), Osztás(4), Kilépés(0)"))
+                    if a1 == 0:
+                        print("Kilépés...")
+                        exit()
+                    elif a1 == 1:
+                        print("Az összeadást válaszotta")
+                        print("Az előző szám:", ans)
+                        c1 = int(input("Adjon meg egy számot:"))
+                        ans+=c1
+                        print("Az új eredménye:", ans)
+                        continue
+                    elif a1 == 2:
+                        print("A kivonást válaszotta")
+                        print("Az előző szám:", ans)
+                        c2 = int(input("Adjon meg egy számot:"))
+                        ans-=c2
+                        print("Az új eredménye:", ans)
+                        continue
+                    elif a1 == 3:
+                        print("A szorzást válaszotta")
+                        print("Az előző szám:", ans)
+                        c3 = int(input("Adjon meg egy számot:"))
+                        ans*=c3
+                        print("Az új eredménye:", ans)
+                        continue
+                    elif a1 == 4:
+                        print("Az osztást válaszotta")
+                        print("Az előző szám:", ans)
+                        c4 = int(input("Adjon meg egy számot:"))
+                        ans/=c4
+                        print("Az új eredménye:", ans)
+                        continue
+                    else:
+                        print("Hibás adat!")
+                        continue
+
+        #Osztás
+
+        if a == 4:
+            print("Az osztást választotta!")
+            b1 = int(input("Adjon meg egy számot"))
+            b2 = int(input("Adjon meg még egy számot"))
+            ans+=b1
+            ans/=b2
+            print("Az eredmény:",ans)
+            while(True):
+                b = int(input("Szeretne tovább számolni a számmal(1) vagy nem(0)"))
+                if b == 0:
+                    print("Kilépés...")
+                    exit()
+                elif b == 1:
+                    a1 = int(input("Milyen műveletet szeretne elvégezni a kapott számmal? Összeadás(1), Kivonás(2), Szorzás(3), Osztás(4), Kilépés(0)"))
+                    if a1 == 0:
+                        print("Kilépés...")
+                        exit()
+                    elif a1 == 1:
+                        print("Az összeadást válaszotta")
+                        print("Az előző szám:", ans)
+                        c1 = int(input("Adjon meg egy számot:"))
+                        ans+=c1
+                        print("Az új eredménye:", ans)
+                        continue
+                    elif a1 == 2:
+                        print("A kivonást válaszotta")
+                        print("Az előző szám:", ans)
+                        c2 = int(input("Adjon meg egy számot:"))
+                        ans-=c2
+                        print("Az új eredménye:", ans)
+                        continue
+                    elif a1 == 3:
+                        print("A szorzást válaszotta")
+                        print("Az előző szám:", ans)
+                        c3 = int(input("Adjon meg egy számot:"))
+                        ans*=c3
+                        print("Az új eredménye:", ans)
+                        continue
+                    elif a1 == 4:
+                        print("Az osztást válaszotta")
+                        print("Az előző szám:", ans)
+                        c4 = int(input("Adjon meg egy számot:"))
+                        ans/=c4
+                        print("Az új eredménye:", ans)
+                        continue
+                    else:
+                        print("Hibás adat!")
+                        continue
+
+        else:
+            print("Hibás adat!")
+            continue
+
+if __name__ == "__main__":
+    main()

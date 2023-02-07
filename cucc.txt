@@ -1,1 +1,34 @@
-aaaaaaaaaaaaaaaaaaa
+#karakterhez tartozó értékek
+
+h = 50  # health
+ms = 50  # melee skill
+md = 5  # melee defense
+ha = 50  # head armor
+ba = 50  # body armor
+dmg = 20  # damage
+ft = 50  # fatigue
+m = 2500 #pénz
+fd = 10  # food
+r = 50 #nehézség?
+
+#ellenséghz tartozó értékek
+
+eh = r  # health
+ems = r  # melee skill
+emd = 1  # melee defense
+eha = 30  # head armor
+eba = 50  # body armor
+eft = 30  # fatigue
+edmg = r/2# damage
+
+#páncél
+
+hah = ha+h  # head armor+health
+bah = ba+h  # body armor+health
+
+#ellenség páncél
+
+ehah = eha + eh  # enemy head armor+health
+ebah = eba + eh  # enemy body armor+health
+
+#piac függvény

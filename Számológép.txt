@@ -1,6 +1,6 @@
 def main():
     ans = 0
-    print("Projekt: Számológép, \nFejlesztők: Kapás Gergő és Kalmár Zsolt\nA projektet bemutatja: Őszi Norbert\n A projektet vezette: Palló Barnabás")
+    print("Projekt: Számológép, \nFejlesztők: Kapás Gergő, Kalmár Zsolt és Tóth Zsombor\nA projektet bemutatja: Őszi Norbert\n A projektet vezette: Palló Barnabás")
     while(True):
         a = int(input("Összeadás(1), Kivonás(2), Szorzás(3), Osztás(4), Kilépés(0)"))
 
